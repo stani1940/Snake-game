@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    flex-direction: column;
+}
+
+#gameContainer {
+    width: 600px;
+    height: 600px;
+    background-color: #000;
+    position: relative;
+}
+
+#playButton {
+    padding: 10px 20px;
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
