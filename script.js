@@ -176,9 +176,9 @@ function onKeyPress(event) {
 }
 
 function placeFood() {
-    const x = Math.floor(Math.random() * COLS) * CELL_SIZE - WIDTH / 2 + CELL_SIZE / 2;
-    const y = Math.floor(Math.random() * ROWS) * CELL_SIZE - HEIGHT / 2 + CELL_SIZE / 2;
-    food.position.set(x, y, 0);
+    const x = Math.floor(Math.random() * COLS);
+    const y = Math.floor(Math.random() * ROWS);
+    food.position.set((x * CELL_SIZE) - WIDTH / 2 + CELL_SIZE / 2, (y * CELL_SIZE) - HEIGHT / 2 + CELL_SIZE / 2, 0);
 }
 
 function update() {
